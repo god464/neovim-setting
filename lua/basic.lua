@@ -1,0 +1,14 @@
+vim.g.encoding = "UTF-8"
+vim.o.fileencoding = 'utf-8'
+vim.o.incsearch = true
+vim.o.autoread = true
+vim.bo.autoread = true
+vim.o.whichwrap = '<,>,[,]'
+vim.o.mouse = "a"
+vim.o.wildmenu = true
+vim.o.showtabline = 2
+vim.o.showmode = false
+vim.g.completeopt = "menu,menuone,noselect,noinsert"
+vim.o.timeoutlen = 500
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
