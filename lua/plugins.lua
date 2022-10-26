@@ -23,8 +23,19 @@ packer.startup({
 			requires = { {'nvim-lua/plenary.nvim'} }
 		}
 		use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+		use({ "neovim/nvim-lspconfig" })
+		use({ "williamboman/mason.nvim" })
+		use({ "williamboman/mason-lspconfig.nvim" })
+		use({"mfussenegger/nvim-dap"})
+		
 	end,
 
+	git = {
+		-- default_url_format = "https://hub.fastgit.xyz/%s",
+		-- default_url_format = "https://mirror.ghproxy.com/https://github.com/%s",
+		-- default_url_format = "https://gitcode.net/mirrors/%s",
+		--		default_url_format = "https://hub.hhhh.host/github.com/%s",
+	},
 }
 )
 
